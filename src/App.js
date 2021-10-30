@@ -33,7 +33,6 @@ function App() {
   return (
     <div className="App">
       <MyDiv color={state.color}/>
-      <h1>Okay Cool Brother it works</h1>
       {state.colors.map(color => <button key={state.colors.indexOf(color)} onClick={() => changeColor(color)}>{color}</button>)}
     </div>
   );
